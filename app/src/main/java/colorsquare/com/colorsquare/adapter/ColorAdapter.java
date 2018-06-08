@@ -12,8 +12,6 @@ import java.util.List;
 public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ColorViewHolder> {
     private List<Integer>
         listOfColors; /* personally prefer to use List to Array even though the array size can be known in this case*/
-    public static int ADAPTER_SIZE = 20;
-
     public ColorAdapter() {
     }
 

@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Integer> createColorList() {
         List<Integer> colorList = new ArrayList<>();
+        int colorCode;
         Random random = new Random();
         for (int i = 0; i < Constant.ADAPTER_SIZE; i++) {
-            int colorCode =
+            colorCode =
                 Color.argb(255, random.nextInt(256), random.nextInt(256), random.nextInt(256));
             colorList.add(colorCode);
         }

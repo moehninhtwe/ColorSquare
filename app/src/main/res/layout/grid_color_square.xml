@@ -5,13 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
   <LinearLayout
-      xmlns:android="http://schemas.android.com/apk/res/android"
       android:id="@+id/ll_squarebox"
       android:layout_width="match_parent"
       android:layout_height="0dp"
       android:orientation="vertical"
       app:layout_constraintDimensionRatio="H,1:1"
-      android:scaleType="centerCrop"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintLeft_toLeftOf="parent"

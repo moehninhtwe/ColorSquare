@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rcColorSquare = findViewById(R.id.recyclerView);
         rcColorSquare.setLayoutManager(new GridLayoutManager(this, Constant.NO_OF_COLUMNS));
+        colorAdapter = new ColorAdapter();
+        rcColorSquare.setAdapter(colorAdapter);
     }
 
     @Override protected void onResume() {
         super.onResume();
-        colorAdapter = new ColorAdapter(createColorList());
-        rcColorSquare.setAdapter(colorAdapter);
+        colorAdapter.setListOfColors(createColorList());
     }
 
     private List<Integer> createColorList() {

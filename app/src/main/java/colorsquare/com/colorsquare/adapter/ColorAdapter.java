@@ -14,7 +14,10 @@ public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ColorViewHol
         listOfColors; /* personally prefer to use List to Array even though the array size can be known in this case*/
     public static int ADAPTER_SIZE = 20;
 
-    public ColorAdapter(List<Integer> listOfColors) {
+    public ColorAdapter() {
+    }
+
+    public void setListOfColors(List<Integer> listOfColors) {
         this.listOfColors = listOfColors;
     }
 
